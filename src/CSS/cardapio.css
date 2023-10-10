@@ -35,17 +35,6 @@ h1 {
     justify-content: space-around;
 }
 
-main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(-256deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 45%); 
-    z-index: 1; 
-}
-
 .conteudo {
     position: absolute;
     top: 0;
@@ -56,17 +45,37 @@ main::after {
     min-height: 100vh;
     max-width: 380px;
     z-index: 1;
+    backdrop-filter: blur(20px);
+    padding: 20px;
 }
 
 
 .botao {
-    width: 100px;
-    height: 100px;
+    width: 70%;
+    height: 120px;
     border-radius: 50%;
-    background-color: red;
     z-index: 5;
     margin: 10px;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff8e700;
+    border: 0px;
+}
+
+.botao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 90%;
+    border: 1px solid var(--cor1);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.444);
+    transition: 0.5s;
+}
+
+.botao img:hover {
+    border: 2px solid var(--cor2);
 }
 
 .botoes {
@@ -85,6 +94,8 @@ main::after {
 }
 
 
+
+
 /* Comidas */
 
 .imagem {
@@ -101,3 +112,6 @@ main .comida.selecionada {
 }
 
 
+.lasanha, .pizza {
+    color: white;
+}
