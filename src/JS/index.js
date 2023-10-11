@@ -48,3 +48,13 @@ function desselecionarBebida() {
 	const bebidaSelecionada = document.querySelectorAll(".bebida.selecionada")
 	bebidaSelecionada.classList.remove("selecionada");
 }
+
+/* Menu Responsivo */
+
+function clickMenu() {
+    if (menucell.style.display == 'flex') {
+        menucell.style.display = 'none' 
+    }
+           
+    else (menucell.style.display = 'flex')
+}

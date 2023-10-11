@@ -26,13 +26,61 @@ h1 {
     color: var(--cor2);
 }
 
+/* Responsivo */
+
+
+@media (max-width: 950px) {
+    body {
+        overflow: scroll;
+    }
+    body .conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 12vh;
+        left: unset;
+        margin-top: 96%;
+        background-color: unset;
+        backdrop-filter: unset;
+        color: white;
+
+    }
+
+    main .comida.selecionada {
+        justify-content: center;
+    }
+
+    html .imagem {
+        margin-top: -100%;
+    }
+
+
+    body .botao {
+        width: 60%;
+        height: 100px;
+        min-width: 25%;
+    }
+
+    body .botoes {
+        display: none;
+    }
+
+    body .menu {
+        display: flex;
+    }
+
+}
+
+
+/* */
+
 .principal {
     width: 100vw;
     height: 100vh;
     position: fixed;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: black;
 }
 
 .conteudo {
@@ -78,7 +126,7 @@ h1 {
     border: 2px solid var(--cor2);
 }
 
-.botoes {
+.botoes, #menucell {
     position: fixed;
     top: 0;
     right: 0;
@@ -94,21 +142,56 @@ h1 {
 }
 
 
+span {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    color: white;
+    display: flex;
+    z-index: 11111;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.menu {
+    position: absolute;
+    width: 100vw;
+    justify-content: right;
+    height: 60px;
+    display: none;
+    align-items: center;
+}
+
+#menucell {
+    animation: burger 3.5s forwards,
+    burgerclose 3.5s forwards;
+}
+
+
+@keyframes burger {
+    from {
+        right: -250px; 
+    }
+    to {
+        right: 0; 
+        margin-left: -21%; 
+    }
+}
 
 
 /* Comidas */
 
 .imagem {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: static;
 }
 
 main .comida {
     display: none;
 }
 main .comida.selecionada {
-    display: block;
+    align-items: center;
+    display: flex;
 }
 
 
