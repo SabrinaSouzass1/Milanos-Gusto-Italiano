@@ -52,9 +52,9 @@ function desselecionarBebida() {
 /* Menu Responsivo */
 
 function clickMenu() {
-    if (menucell.style.display == 'flex') {
-        menucell.style.display = 'none' 
+    if (botoesid.style.display == 'flex') {
+        botoesid.style.display = 'none' 
     }
            
-    else (menucell.style.display = 'flex')
+    else (botoesid.style.display = 'flex')
 }

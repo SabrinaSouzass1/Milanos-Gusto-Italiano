@@ -126,7 +126,7 @@ h1 {
     border: 2px solid var(--cor2);
 }
 
-.botoes, #menucell {
+.botoes {
     position: fixed;
     top: 0;
     right: 0;
@@ -162,7 +162,7 @@ span {
     align-items: center;
 }
 
-#menucell {
+#botoesid {
     animation: burger 3.5s forwards,
     burgerclose 3.5s forwards;
 }
