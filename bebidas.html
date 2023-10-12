@@ -92,9 +92,6 @@
         </div>
     </main>
 
-
-    <script src="./src/js/menu.js"></script>
-
     <script>
 
 
@@ -119,6 +116,17 @@
         function desselecionarBotao() {
             const botaoSelecionada = document.querySelector(".botao.selecionada");
             botaoSelecionada.classList.remove("selecionada");
+        }
+
+
+        /* Menu Responsivo */
+
+        function clickMenu() {
+            if (botoesid.style.display == 'flex') {
+                botoesid.style.display = 'none'
+            }
+
+            else (botoesid.style.display = 'flex')
         }
 
 
