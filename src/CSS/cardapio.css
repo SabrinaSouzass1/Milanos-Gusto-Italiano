@@ -29,7 +29,7 @@ h1 {
 /* Responsivo */
 
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
     body {
         overflow: scroll;
     }
@@ -40,14 +40,15 @@ h1 {
         text-align: center;
         min-height: 12vh;
         left: unset;
-        margin-top: 96%;
+        margin-top: 50%;
         background-color: unset;
         backdrop-filter: unset;
         color: white;
+        position: absolute;
 
     }
 
-    main .comida.selecionada {
+    main .comida.selecionada, .bebida.selecionada {
         justify-content: center;
     }
 
@@ -71,6 +72,36 @@ h1 {
     }
 
 }
+
+
+@media (max-width: 570px) {
+    body .conteudo {
+        margin-top: 96%;
+
+    }
+
+}
+
+
+@media (max-width: 540px) {
+
+    body .conteudo {
+        margin-top: 80%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    body .conteudo {
+        margin-top: 95%;
+    }
+
+}
+
+
+
+
 
 
 /* */
@@ -150,7 +181,9 @@ span {
     display: flex;
     z-index: 11111;
     cursor: pointer;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .menu {
@@ -186,10 +219,10 @@ span {
     position: static;
 }
 
-main .comida {
+main .comida, .bebida {
     display: none;
 }
-main .comida.selecionada {
+main .comida.selecionada, .bebida.selecionada {
     align-items: center;
     display: flex;
 }
@@ -198,3 +231,10 @@ main .comida.selecionada {
 .lasanha, .pizza {
     color: white;
 }
+
+/* Bebidas */
+
+.bebida.selecionada {
+    color: white;
+}
+
