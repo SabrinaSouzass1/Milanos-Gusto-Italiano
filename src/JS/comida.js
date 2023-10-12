@@ -1,4 +1,3 @@
-/* Comidas */
 
 const botoes = document.querySelectorAll(".botao");
 const comidas = document.querySelectorAll(".comida");
